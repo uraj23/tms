@@ -9,19 +9,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-
 @Entity
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-    private String name;
-    private String email;
-    private Long phoneno;
+	private String name;
+	private String email;
+	private Long phoneno;
+	private String password;
 
 }
